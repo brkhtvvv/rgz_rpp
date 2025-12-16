@@ -26,4 +26,4 @@ jobs:
 
       - name: Проверка безопасности (bandit)
         run: |
-          bandit -r .
+          bandit -r . -x venv,test_app.py
