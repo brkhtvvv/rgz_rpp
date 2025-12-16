@@ -9,7 +9,6 @@ DB_PASS="postgres"
 VENV_DIR="venv"
 PID_FILE="app.pid"
 
-
 setup_database() {
   echo "setup_database: проверка базы данных"
 
@@ -26,7 +25,6 @@ setup_database() {
   fi
 }
 
-
 install_dependencies() {
   echo "install_dependencies: установка зависимостей"
 
@@ -37,7 +35,6 @@ install_dependencies() {
 
   echo "OK: зависимости установлены"
 }
-
 
 start_app() {
   echo "start_app: запуск приложения"
@@ -51,7 +48,6 @@ start_app() {
 
   echo "OK: приложение запущено"
 }
-
 
 stop_app() {
   echo "stop_app: остановка приложения"
@@ -67,7 +63,6 @@ stop_app() {
   echo "OK: приложение остановлено"
 }
 
-
 run_tests() {
   echo "run_tests: запуск тестов"
 
@@ -76,7 +71,6 @@ run_tests() {
 
   echo "OK: тесты выполнены"
 }
-
 
 CMD="$1"
 
